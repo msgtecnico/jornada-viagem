@@ -1,9 +1,18 @@
 .main-header {
-  /* Adicionar ... Alex */
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 38px 24px;
+  position: relative;
 }
 
 .logo {
   /* Adicionar 2 ... Alex */
+  display: inline-block;
+  width: 68px;
+  height: 64px;
 }
 
 .img-mobile {
@@ -19,7 +28,12 @@
 
 input[type="checkbox"]:checked ~ nav {
   /* Faz com que o menu de navegação seja exibido quando o checkbox estiver marcado - Seletor de irmandade*/
-  /* Adicionar 1 ... Alex */
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
@@ -63,7 +77,11 @@ nav {
   }
   .navigation-menu ul {
     /* Adiciona estilos para a lista de links do menu de navegação */
-    /* Adicionar 3 ... Alex */
+    display: flex;
+    justify-content: space-between; /* Distribui os itens da lista igualmente */
+    align-items: center; /* Alinha os itens da lista verticalmente */
+    padding: 0; /* Remove o preenchimento da lista */
+        
   }
   .navigation-menu li {
     margin: 0;
